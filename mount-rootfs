@@ -1,0 +1,6 @@
+!#/bin/sh
+
+mkdir /mnt
+mount -t ntfs -o permissions /dev/nvme0n1p3 /mnt
+mount --bind /mnt/linux /root
+
